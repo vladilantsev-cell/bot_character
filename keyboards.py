@@ -74,7 +74,10 @@ def get_promo_keyboard(promo_id):
 def get_info_menu_keyboard():
     return InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="🔥 Горячие предложения", callback_data="promo_list")],
-        [InlineKeyboardButton(text="🏠 Главное меню", callback_data="main_menu")]
+        [InlineKeyboardButton(text="🏠 Подобрать объект", callback_data="continue")],
+        [InlineKeyboardButton(text="🧮 Калькулятор ипотеки", callback_data="mortgage")],
+        [InlineKeyboardButton(text="🏢 Квартиры недели", url=WEEKLY_POST_LINK)],
+        [InlineKeyboardButton(text="📞 Бесплатная консультация", callback_data="consultation")]
     ])
 
 def get_after_catalog_keyboard():
