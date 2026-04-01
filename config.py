@@ -10,7 +10,7 @@ ADMIN_IDS = [int(id) for id in os.getenv("ADMIN_IDS", "").split(",") if id]
 CHANNEL_ID = os.getenv("CHANNEL_ID")
 SUPPORT_LINK = os.getenv("SUPPORT_LINK", "https://t.me/smllr")
 WEEKLY_POST_LINK = os.getenv("WEEKLY_POST_LINK", "https://t.me/ваш_канал/пост")
-GUIDE_LINK = os.getenv("GUIDE_LINK", "https://t.me/ваш_канал/гайд")
+GUIDE_LINK = os.getenv("GUIDE_LINK", "https://disk.yandex.ru/i/NNqm36NBAVEJpQ")
 PHONE_NUMBER = os.getenv("PHONE_NUMBER", "+78001234567")
 
 if not BOT_TOKEN:
